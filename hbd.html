@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Happy Birthday, <span id="nama">...</span>! 🎂🎊</h1>
+        <p>🎉🩷🤍🩵 happy birthday hari ini kamu ulang tahun selamat bertambah usia makin sabar, kuat dan doa terbaik untukmu semoga diumur sekarang semesta berpihak ya sama kamu semoga bisa dapetin hal yang selama ini diperjuangin, semoga bahagia dan semoga itu selamanya best wishes for special people🎉🩷🤍🩵
+        </p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let nama = localStorage.getItem("nama") || "Kamu";
+            document.getElementById("nama").innerText = nama;
+        });
+    </script>
+</body>
+</html>
